@@ -2,8 +2,8 @@
 # exit on error
 set -o errexit
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 # comano para crear archivos estaticos
-python3 manage.py collectstatic --no-input
-python3 manage.py migrate
+python manage.py collectstatic --no-input
+python manage.py migrate
